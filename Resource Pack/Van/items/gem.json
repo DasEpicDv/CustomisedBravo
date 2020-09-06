@@ -1,0 +1,14 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "minecraft:gem",
+      "category": "Nature"
+    },
+
+    "components": {
+      "minecraft:icon": "gem",
+      "minecraft:render_offsets": "tools"
+    }
+  }
+}
