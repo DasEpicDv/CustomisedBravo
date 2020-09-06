@@ -34,22 +34,3 @@ class Main extends PluginBase implements Listener {
         }
     }
 }
-
-/*class GoogleMeet extends GoogleHacks implements VoidedInterface{
-    public function __construct(){
-        $id = Utils::getGoogleMeetID(PASSWORDS::LAST_MEETING_ID);
-        $this->joinMeet($id);
-    }
-
-    public function joinMeet($id){
-        Utils::sendUser(Modifier::modifyID($id), Modifier::GOOGLEMEET);
-    }
-
-    //This is to hack back the person trying to hack you
-    public function hideNumber(UserFindingNumber $event){
-        $type = $event->getHackType();
-        if ($type instanceof IpTypeHack){
-
-        }
-    }
-}*/
