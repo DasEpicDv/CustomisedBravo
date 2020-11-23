@@ -1,3 +1,16 @@
 {
-  "minecraft:gem":899
+  "required_item_list" : {
+    "minecraft:gem":{
+      "runtime_id": 899,
+      "component_based":false
+    }
+  },
+  "r16_to_current_item_map": {
+    "simple" : {
+      "minecraft:gem": "minecraft:custom_gem"
+    }
+  },
+  "item_id_map": {
+    "minecraft:gem": 899
+  }
 }
