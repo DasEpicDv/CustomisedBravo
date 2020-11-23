@@ -20,7 +20,7 @@ class Main extends PluginBase implements Listener {
         ItemFactory::registerItem(new Item(CustomiesBravo::GEM, 0, "Gem"));
         CustomiesBravo::init($this);
 
-
+	//"Injecting", lol
         $instance = ItemTranslator::getInstance();
         $ref = new ReflectionObject($instance);
         $r1 = $ref->getProperty("simpleCoreToNetMapping");
@@ -34,6 +34,7 @@ class Main extends PluginBase implements Listener {
     public function onPacketReceve(DataPacketSendEvent $event){
         $packet = $event->getPacket();
         if ($packet instanceof StartGamePacket){
+	    //Sending the custom items to the client ?? (Not sure lol)	
             $packet->itemTable = CustomiesBravo::$entries;
         }
     }
