@@ -7,3 +7,6 @@ While developing my server **Apathos Network** i came across with features *cust
 ***Note: This isn't mainly a plugin for normal people to use, it'll work but it's just an example-like plugin***
 
 Make sure to check Resource Pack folder, it has the resource pack which is as important as the code.
+
+**SUPPORTED VERSION**
+Pocketmine 3.16.0 :)
