@@ -22,6 +22,7 @@ class CustomiesBravo{
         if($data === false) throw new AssumptionFailedError("Missing required resource file");
         $json = json_decode($data, true);
         $add = $file["r16_to_current_item_map"];
+        //Merged custom items here with minecraft vanilla items
         $json["simple"] = array_merge($json["simple"], $add["simple"]);
         if(!is_array($json) or !isset($json["simple"], $json["complex"]) || !is_array($json["simple"]) || !is_array($json["complex"])){
             throw new AssumptionFailedError("Invalid item table format");
@@ -32,6 +33,7 @@ class CustomiesBravo{
         if($legacyStringToIntMapRaw === false){
             throw new AssumptionFailedError("Missing required resource file");
         }
+        //Merged custom items here with minecraft vanilla items
         $legacyStringToIntMap = json_decode($legacyStringToIntMapRaw, true);
         $legacyStringToIntMap = array_merge($add, $legacyStringToIntMap);
 
@@ -67,7 +69,7 @@ class CustomiesBravo{
                 $complexMappings[$newId] = [$legacyStringToIntMap[$oldId], (int) $meta];
             }
         }
-
+        //Merged custom items here with minecraft vanilla items
         $old = json_decode(file_get_contents(RESOURCE_PATH  . '/vanilla/required_item_list.json'), true);
         $add = $file["required_item_list"];
         $table = array_merge($old, $add);
@@ -89,4 +91,6 @@ class CustomiesBravo{
             }
         }
     }
+
+    //To be honest idk what these "r16_to_current_item_map" or "required_item_list" really means, I have just Copied the style items are there and then merged the files
 }
