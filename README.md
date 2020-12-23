@@ -10,3 +10,5 @@ Make sure to check Resource Pack folder, it has the resource pack which is as im
 
 **SUPPORTED VERSION**
 Pocketmine 3.16.0 :)
+
+[I AM THE REPO OWNER NOW! Itzdvbravo has retired from PMMP and development my discord is DasEpicDv#7068]
